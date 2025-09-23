@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belanja Online</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7f6;
+    }
+
+    /* Navbar */
+    header {
+      background: #2575fc;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+    header nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Banner Promo */
+    .banner {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .banner h2 {
+      margin: 0 0 10px;
+      font-size: 28px;
+    }
+
+    /* Kategori */
+    .kategori {
+      padding: 30px;
+    }
+    .kategori h3 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+    }
+    .item {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: 0.2s;
+    }
+    .item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .item img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .item p {
+      margin: 5px 0;
+      font-weight: bold;
+      color: #444;
+    }
+    .price {
+      color: #f3f3f3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TokoKita</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Kategori</a>
+      <a href="#">Keranjang</a>
+      <a href="#">Akun</a>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <h2>Promo Spesial Hari Ini!</h2>
+    <p>Diskon hingga 50% untuk produk pilihan</p>
+  </div>
+
+  <section class="kategori">
+    <h3>Kategori Produk</h3>
+    <div class="grid">
+      <div class="item">
+        <img src="https://via.placeholder.com/100" alt="Elektronik">
+        <p>Elektronik</p>
+        <p class="price">Mulai Rp 100.000</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/100" alt="Fashion">
+        <p>Fashion</p>
+        <p class="price">Mulai Rp 50.000</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/100" alt="Aksesoris">
+        <p>Aksesoris</p>
+        <p class="price">Mulai Rp 20.000</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/100" alt="Kesehatan">
+        <p>Kesehatan</p>
+        <p class="price">Mulai Rp 30.000</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
