@@ -1,4 +1,3 @@
-// In-memory state (mulai kosong) + optional persist via localStorage
 const STORAGE_KEY = 'umkm_admin_state_v1';
 let state = { categories: [], products: [], orders: [] };
 
@@ -232,4 +231,5 @@ function renderAll(){
   // logout (simulasi)
   $('#logoutBtn').addEventListener('click',()=> alert('Anda berhasil Logout'));
 })();
+
 
