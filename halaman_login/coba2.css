@@ -13,15 +13,23 @@ body {
   background: linear-gradient(120deg, #6a11cb, #2575fc);
 }
 
-.container {
+/* .container {
   display: flex;
   width: 850px;
   border-radius: 12px;
   overflow: hidden;
   background: #fff;
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-}
+} */
 
+.container {
+  width: 400px;         /* lebih ramping */
+  padding: 40px;        /* kasih ruang biar isinya lega */
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
 /* Sign Up Section */
 .signup {
   flex: 1;
@@ -61,17 +69,10 @@ body {
   color: #fff;
 }
 
-/* Sign In Section */
-.signin {
-  flex: 1;
-  padding: 60px 40px;
-  text-align: center;
-}
 
-.signin h2 {
-  margin-bottom: 10px;
-  font-size: 26px;
-  color: #222;
+.signin {
+  padding: 40px;
+  text-align: center;
 }
 
 .subtitle {
