@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Daftar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(120deg, #6a11cb, #2575fc);
+    }
+
+  /* Untuk kotak daftar */
+  .signup {
+    width: 400px;   /* samakan dengan signin */
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+    .signup h2 {
+      margin-bottom: 10px;
+      font-size: 28px;
+      color: #222;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 25px;
+    }
+
+    form input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      background: #2575fc;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1a5bd8;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup">
+    <h2>Daftar</h2>
+    <p class="subtitle">Buat akun baru dengan email dan kata sandi</p>
+    <form onsubmit="daftar(event)">
+      <input type="text" id="username" placeholder="Nama Pengguna" required>
+      <input type="email" id="email" placeholder="Alamat Email" required>
+      <input type="password" id="password" placeholder="Kata Sandi" required>
+      <input type="password" id="confirmPassword" placeholder="Konfirmasi Kata Sandi" required>
+      <button type="submit" class="btn">DAFTAR</button>
+    </form>
+  </div>
+
+  <script>
+    function daftar(e) {
+      e.preventDefault();
+      let username = document.getElementById("username").value;
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+      let confirmPassword = document.getElementById("confirmPassword").value;
+
+      if (password !== confirmPassword) {
+        alert("Password dan konfirmasi tidak cocok!");
+        return;
+      }
+
+      alert("Pendaftaran berhasil! Silakan login.");
+      window.location.href = "coba.html"; // setelah daftar diarahkan ke login
+    }
+  </script>
+</body>
+</html>
